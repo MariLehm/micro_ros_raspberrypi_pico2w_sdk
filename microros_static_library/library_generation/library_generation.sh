@@ -6,7 +6,8 @@ apt update
 
 apt install -y gcc-arm-none-eabi
 
-git clone https://github.com/raspberrypi/pico-sdk /pico-sdk
+git clone -b 2.2.0 https://github.com/raspberrypi/pico-sdk /pico-sdk
+cd /pico-sdk && git submodule update --init
 
 ######## Init ########
 
