@@ -17,30 +17,30 @@
 
 /// \def RCL_VERSION_MAJOR
 /// Defines RCL major version number
-#define RCL_VERSION_MAJOR (6)
+#define RCL_VERSION_MAJOR (5)
 
 /// \def RCL_VERSION_MINOR
 /// Defines RCL minor version number
-#define RCL_VERSION_MINOR (0)
+#define RCL_VERSION_MINOR (3)
 
 /// \def RCL_VERSION_PATCH
 /// Defines RCL version patch number
-#define RCL_VERSION_PATCH (6)
+#define RCL_VERSION_PATCH (10)
 
 /// \def RCL_VERSION_STR
 /// Defines RCL version string
-#define RCL_VERSION_STR "6.0.6"
+#define RCL_VERSION_STR "5.3.10"
 
 /// \def RCL_VERSION_GTE
 /// Defines a macro to check whether the version of RCL is greater than or equal to
 /// the given version triple.
 #define RCL_VERSION_GTE(major, minor, patch) ( \
      (major < RCL_VERSION_MAJOR) ? true \
-     : ((major > RCL_VERSION_MAJOR) ? false \
-     : ((minor < RCL_VERSION_MINOR) ? true \
-     : ((minor > RCL_VERSION_MINOR) ? false \
-     : ((patch < RCL_VERSION_PATCH) ? true \
-     : ((patch > RCL_VERSION_PATCH) ? false \
-     : true))))))
+     : (major > RCL_VERSION_MAJOR) ? false \
+     : (minor < RCL_VERSION_MINOR) ? true \
+     : (minor > RCL_VERSION_MINOR) ? false \
+     : (patch < RCL_VERSION_PATCH) ? true \
+     : (patch > RCL_VERSION_PATCH) ? false \
+     : true)
 
 #endif  // RCL__VERSION_H_
