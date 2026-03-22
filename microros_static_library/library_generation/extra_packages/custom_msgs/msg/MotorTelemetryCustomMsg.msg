@@ -1,0 +1,5 @@
+# My custom motor telemetry message
+float32 measured_motor_speed_rpm
+float32 measured_motor_position_grad
+float32 measured_motor_current_amp
+uint32 timestamp_ms

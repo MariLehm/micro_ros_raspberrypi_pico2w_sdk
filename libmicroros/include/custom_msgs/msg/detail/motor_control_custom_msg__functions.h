@@ -1,9 +1,9 @@
 // generated from rosidl_generator_c/resource/idl__functions.h.em
-// with input from custom_msgs:msg/LedCustomMsg.idl
+// with input from custom_msgs:msg/MotorControlCustomMsg.idl
 // generated code does not contain a copyright notice
 
-#ifndef CUSTOM_MSGS__MSG__DETAIL__LED_CUSTOM_MSG__FUNCTIONS_H_
-#define CUSTOM_MSGS__MSG__DETAIL__LED_CUSTOM_MSG__FUNCTIONS_H_
+#ifndef CUSTOM_MSGS__MSG__DETAIL__MOTOR_CONTROL_CUSTOM_MSG__FUNCTIONS_H_
+#define CUSTOM_MSGS__MSG__DETAIL__MOTOR_CONTROL_CUSTOM_MSG__FUNCTIONS_H_
 
 #ifdef __cplusplus
 extern "C"
@@ -16,57 +16,57 @@ extern "C"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "custom_msgs/msg/rosidl_generator_c__visibility_control.h"
 
-#include "custom_msgs/msg/detail/led_custom_msg__struct.h"
+#include "custom_msgs/msg/detail/motor_control_custom_msg__struct.h"
 
-/// Initialize msg/LedCustomMsg message.
+/// Initialize msg/MotorControlCustomMsg message.
 /**
  * If the init function is called twice for the same message without
  * calling fini inbetween previously allocated memory will be leaked.
  * \param[in,out] msg The previously allocated message pointer.
  * Fields without a default value will not be initialized by this function.
  * You might want to call memset(msg, 0, sizeof(
- * custom_msgs__msg__LedCustomMsg
+ * custom_msgs__msg__MotorControlCustomMsg
  * )) before or use
- * custom_msgs__msg__LedCustomMsg__create()
+ * custom_msgs__msg__MotorControlCustomMsg__create()
  * to allocate and initialize the message.
  * \return true if initialization was successful, otherwise false
  */
 ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
 bool
-custom_msgs__msg__LedCustomMsg__init(custom_msgs__msg__LedCustomMsg * msg);
+custom_msgs__msg__MotorControlCustomMsg__init(custom_msgs__msg__MotorControlCustomMsg * msg);
 
-/// Finalize msg/LedCustomMsg message.
+/// Finalize msg/MotorControlCustomMsg message.
 /**
  * \param[in,out] msg The allocated message pointer.
  */
 ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
 void
-custom_msgs__msg__LedCustomMsg__fini(custom_msgs__msg__LedCustomMsg * msg);
+custom_msgs__msg__MotorControlCustomMsg__fini(custom_msgs__msg__MotorControlCustomMsg * msg);
 
-/// Create msg/LedCustomMsg message.
+/// Create msg/MotorControlCustomMsg message.
 /**
  * It allocates the memory for the message, sets the memory to zero, and
  * calls
- * custom_msgs__msg__LedCustomMsg__init().
+ * custom_msgs__msg__MotorControlCustomMsg__init().
  * \return The pointer to the initialized message if successful,
  * otherwise NULL
  */
 ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
-custom_msgs__msg__LedCustomMsg *
-custom_msgs__msg__LedCustomMsg__create();
+custom_msgs__msg__MotorControlCustomMsg *
+custom_msgs__msg__MotorControlCustomMsg__create();
 
-/// Destroy msg/LedCustomMsg message.
+/// Destroy msg/MotorControlCustomMsg message.
 /**
  * It calls
- * custom_msgs__msg__LedCustomMsg__fini()
+ * custom_msgs__msg__MotorControlCustomMsg__fini()
  * and frees the memory of the message.
  * \param[in,out] msg The allocated message pointer.
  */
 ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
 void
-custom_msgs__msg__LedCustomMsg__destroy(custom_msgs__msg__LedCustomMsg * msg);
+custom_msgs__msg__MotorControlCustomMsg__destroy(custom_msgs__msg__MotorControlCustomMsg * msg);
 
-/// Check for msg/LedCustomMsg message equality.
+/// Check for msg/MotorControlCustomMsg message equality.
 /**
  * \param[in] lhs The message on the left hand size of the equality operator.
  * \param[in] rhs The message on the right hand size of the equality operator.
@@ -74,9 +74,9 @@ custom_msgs__msg__LedCustomMsg__destroy(custom_msgs__msg__LedCustomMsg * msg);
  */
 ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
 bool
-custom_msgs__msg__LedCustomMsg__are_equal(const custom_msgs__msg__LedCustomMsg * lhs, const custom_msgs__msg__LedCustomMsg * rhs);
+custom_msgs__msg__MotorControlCustomMsg__are_equal(const custom_msgs__msg__MotorControlCustomMsg * lhs, const custom_msgs__msg__MotorControlCustomMsg * rhs);
 
-/// Copy a msg/LedCustomMsg message.
+/// Copy a msg/MotorControlCustomMsg message.
 /**
  * This functions performs a deep copy, as opposed to the shallow copy that
  * plain assignment yields.
@@ -89,14 +89,14 @@ custom_msgs__msg__LedCustomMsg__are_equal(const custom_msgs__msg__LedCustomMsg *
  */
 ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
 bool
-custom_msgs__msg__LedCustomMsg__copy(
-  const custom_msgs__msg__LedCustomMsg * input,
-  custom_msgs__msg__LedCustomMsg * output);
+custom_msgs__msg__MotorControlCustomMsg__copy(
+  const custom_msgs__msg__MotorControlCustomMsg * input,
+  custom_msgs__msg__MotorControlCustomMsg * output);
 
-/// Initialize array of msg/LedCustomMsg messages.
+/// Initialize array of msg/MotorControlCustomMsg messages.
 /**
  * It allocates the memory for the number of elements and calls
- * custom_msgs__msg__LedCustomMsg__init()
+ * custom_msgs__msg__MotorControlCustomMsg__init()
  * for each element of the array.
  * \param[in,out] array The allocated array pointer.
  * \param[in] size The size / capacity of the array.
@@ -106,44 +106,44 @@ custom_msgs__msg__LedCustomMsg__copy(
  */
 ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
 bool
-custom_msgs__msg__LedCustomMsg__Sequence__init(custom_msgs__msg__LedCustomMsg__Sequence * array, size_t size);
+custom_msgs__msg__MotorControlCustomMsg__Sequence__init(custom_msgs__msg__MotorControlCustomMsg__Sequence * array, size_t size);
 
-/// Finalize array of msg/LedCustomMsg messages.
+/// Finalize array of msg/MotorControlCustomMsg messages.
 /**
  * It calls
- * custom_msgs__msg__LedCustomMsg__fini()
+ * custom_msgs__msg__MotorControlCustomMsg__fini()
  * for each element of the array and frees the memory for the number of
  * elements.
  * \param[in,out] array The initialized array pointer.
  */
 ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
 void
-custom_msgs__msg__LedCustomMsg__Sequence__fini(custom_msgs__msg__LedCustomMsg__Sequence * array);
+custom_msgs__msg__MotorControlCustomMsg__Sequence__fini(custom_msgs__msg__MotorControlCustomMsg__Sequence * array);
 
-/// Create array of msg/LedCustomMsg messages.
+/// Create array of msg/MotorControlCustomMsg messages.
 /**
  * It allocates the memory for the array and calls
- * custom_msgs__msg__LedCustomMsg__Sequence__init().
+ * custom_msgs__msg__MotorControlCustomMsg__Sequence__init().
  * \param[in] size The size / capacity of the array.
  * \return The pointer to the initialized array if successful, otherwise NULL
  */
 ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
-custom_msgs__msg__LedCustomMsg__Sequence *
-custom_msgs__msg__LedCustomMsg__Sequence__create(size_t size);
+custom_msgs__msg__MotorControlCustomMsg__Sequence *
+custom_msgs__msg__MotorControlCustomMsg__Sequence__create(size_t size);
 
-/// Destroy array of msg/LedCustomMsg messages.
+/// Destroy array of msg/MotorControlCustomMsg messages.
 /**
  * It calls
- * custom_msgs__msg__LedCustomMsg__Sequence__fini()
+ * custom_msgs__msg__MotorControlCustomMsg__Sequence__fini()
  * on the array,
  * and frees the memory of the array.
  * \param[in,out] array The initialized array pointer.
  */
 ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
 void
-custom_msgs__msg__LedCustomMsg__Sequence__destroy(custom_msgs__msg__LedCustomMsg__Sequence * array);
+custom_msgs__msg__MotorControlCustomMsg__Sequence__destroy(custom_msgs__msg__MotorControlCustomMsg__Sequence * array);
 
-/// Check for msg/LedCustomMsg message array equality.
+/// Check for msg/MotorControlCustomMsg message array equality.
 /**
  * \param[in] lhs The message array on the left hand size of the equality operator.
  * \param[in] rhs The message array on the right hand size of the equality operator.
@@ -151,9 +151,9 @@ custom_msgs__msg__LedCustomMsg__Sequence__destroy(custom_msgs__msg__LedCustomMsg
  */
 ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
 bool
-custom_msgs__msg__LedCustomMsg__Sequence__are_equal(const custom_msgs__msg__LedCustomMsg__Sequence * lhs, const custom_msgs__msg__LedCustomMsg__Sequence * rhs);
+custom_msgs__msg__MotorControlCustomMsg__Sequence__are_equal(const custom_msgs__msg__MotorControlCustomMsg__Sequence * lhs, const custom_msgs__msg__MotorControlCustomMsg__Sequence * rhs);
 
-/// Copy an array of msg/LedCustomMsg messages.
+/// Copy an array of msg/MotorControlCustomMsg messages.
 /**
  * This functions performs a deep copy, as opposed to the shallow copy that
  * plain assignment yields.
@@ -166,12 +166,12 @@ custom_msgs__msg__LedCustomMsg__Sequence__are_equal(const custom_msgs__msg__LedC
  */
 ROSIDL_GENERATOR_C_PUBLIC_custom_msgs
 bool
-custom_msgs__msg__LedCustomMsg__Sequence__copy(
-  const custom_msgs__msg__LedCustomMsg__Sequence * input,
-  custom_msgs__msg__LedCustomMsg__Sequence * output);
+custom_msgs__msg__MotorControlCustomMsg__Sequence__copy(
+  const custom_msgs__msg__MotorControlCustomMsg__Sequence * input,
+  custom_msgs__msg__MotorControlCustomMsg__Sequence * output);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif  // CUSTOM_MSGS__MSG__DETAIL__LED_CUSTOM_MSG__FUNCTIONS_H_
+#endif  // CUSTOM_MSGS__MSG__DETAIL__MOTOR_CONTROL_CUSTOM_MSG__FUNCTIONS_H_

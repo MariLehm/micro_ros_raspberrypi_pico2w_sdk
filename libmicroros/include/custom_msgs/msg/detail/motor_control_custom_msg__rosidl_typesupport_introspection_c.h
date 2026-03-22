@@ -1,9 +1,9 @@
 // generated from rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em
-// with input from custom_msgs:msg/LedCustomeMsg.idl
+// with input from custom_msgs:msg/MotorControlCustomMsg.idl
 // generated code does not contain a copyright notice
 
-#ifndef CUSTOM_MSGS__MSG__DETAIL__LED_CUSTOME_MSG__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_
-#define CUSTOM_MSGS__MSG__DETAIL__LED_CUSTOME_MSG__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_
+#ifndef CUSTOM_MSGS__MSG__DETAIL__MOTOR_CONTROL_CUSTOM_MSG__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_
+#define CUSTOM_MSGS__MSG__DETAIL__MOTOR_CONTROL_CUSTOM_MSG__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_
 
 #ifdef __cplusplus
 extern "C"
@@ -17,10 +17,10 @@ extern "C"
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_PUBLIC_custom_msgs
 const rosidl_message_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, custom_msgs, msg, LedCustomeMsg)();
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, custom_msgs, msg, MotorControlCustomMsg)();
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif  // CUSTOM_MSGS__MSG__DETAIL__LED_CUSTOME_MSG__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_
+#endif  // CUSTOM_MSGS__MSG__DETAIL__MOTOR_CONTROL_CUSTOM_MSG__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_

@@ -1,9 +1,9 @@
 // generated from rosidl_generator_c/resource/idl__type_support.h.em
-// with input from custom_msgs:msg/LedCustomMsg.idl
+// with input from custom_msgs:msg/MotorControlCustomMsg.idl
 // generated code does not contain a copyright notice
 
-#ifndef CUSTOM_MSGS__MSG__DETAIL__LED_CUSTOM_MSG__TYPE_SUPPORT_H_
-#define CUSTOM_MSGS__MSG__DETAIL__LED_CUSTOM_MSG__TYPE_SUPPORT_H_
+#ifndef CUSTOM_MSGS__MSG__DETAIL__MOTOR_CONTROL_CUSTOM_MSG__TYPE_SUPPORT_H_
+#define CUSTOM_MSGS__MSG__DETAIL__MOTOR_CONTROL_CUSTOM_MSG__TYPE_SUPPORT_H_
 
 #include "rosidl_typesupport_interface/macros.h"
 
@@ -23,11 +23,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   rosidl_typesupport_c,
   custom_msgs,
   msg,
-  LedCustomMsg
+  MotorControlCustomMsg
 )();
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif  // CUSTOM_MSGS__MSG__DETAIL__LED_CUSTOM_MSG__TYPE_SUPPORT_H_
+#endif  // CUSTOM_MSGS__MSG__DETAIL__MOTOR_CONTROL_CUSTOM_MSG__TYPE_SUPPORT_H_

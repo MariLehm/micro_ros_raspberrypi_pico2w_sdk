@@ -1,8 +1,8 @@
 // generated from rosidl_typesupport_microxrcedds_c/resource/idl__rosidl_typesupport_c.h.em
-// with input from custom_msgs:msg/LedCustomMsg.idl
+// with input from custom_msgs:msg/MotorControlCustomMsg.idl
 // generated code does not contain a copyright notice
-#ifndef CUSTOM_MSGS__MSG__LED_CUSTOM_MSG__ROSIDL_TYPESUPPORT_MICROXRCEDDS_C_H_
-#define CUSTOM_MSGS__MSG__LED_CUSTOM_MSG__ROSIDL_TYPESUPPORT_MICROXRCEDDS_C_H_
+#ifndef CUSTOM_MSGS__MSG__MOTOR_CONTROL_CUSTOM_MSG__ROSIDL_TYPESUPPORT_MICROXRCEDDS_C_H_
+#define CUSTOM_MSGS__MSG__MOTOR_CONTROL_CUSTOM_MSG__ROSIDL_TYPESUPPORT_MICROXRCEDDS_C_H_
 
 
 #include <stddef.h>
@@ -18,22 +18,22 @@ extern "C"
 #endif
 
 ROSIDL_TYPESUPPORT_MICROXRCEDDS_C_PUBLIC_custom_msgs
-size_t get_serialized_size_custom_msgs__msg__LedCustomMsg(
+size_t get_serialized_size_custom_msgs__msg__MotorControlCustomMsg(
   const void * untyped_ros_message,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_MICROXRCEDDS_C_PUBLIC_custom_msgs
-size_t max_serialized_size_custom_msgs__msg__LedCustomMsg(
+size_t max_serialized_size_custom_msgs__msg__MotorControlCustomMsg(
   bool * full_bounded,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_MICROXRCEDDS_C_PUBLIC_custom_msgs
 const rosidl_message_type_support_t *
-  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_microxrcedds_c, custom_msgs, msg, LedCustomMsg)();
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_microxrcedds_c, custom_msgs, msg, MotorControlCustomMsg)();
 
 #ifdef __cplusplus
 }
 #endif
 
 
-#endif  // CUSTOM_MSGS__MSG__LED_CUSTOM_MSG__ROSIDL_TYPESUPPORT_MICROXRCEDDS_C_H_
+#endif  // CUSTOM_MSGS__MSG__MOTOR_CONTROL_CUSTOM_MSG__ROSIDL_TYPESUPPORT_MICROXRCEDDS_C_H_

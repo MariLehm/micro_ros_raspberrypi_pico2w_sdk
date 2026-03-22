@@ -35,7 +35,8 @@ control_msgs/SingleDOFState.msg
 control_msgs/SingleDOFStateStamped.msg
 control_msgs/SingleJointPosition.action
 control_msgs/SteeringControllerStatus.msg
-custom_msgs/LedCustomMsg.msg
+custom_msgs/MotorControlCustomMsg.msg
+custom_msgs/MotorTelemetryCustomMsg.msg
 data/Test.action
 data/Test.msg
 data/Test.srv
