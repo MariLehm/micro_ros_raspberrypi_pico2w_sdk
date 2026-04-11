@@ -17,12 +17,43 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'MODE_INIT'.
+enum
+{
+  custom_msgs__msg__MotorTelemetryCustomMsg__MODE_INIT = 0
+};
+
+/// Constant 'MODE_IDLE'.
+enum
+{
+  custom_msgs__msg__MotorTelemetryCustomMsg__MODE_IDLE = 1
+};
+
+/// Constant 'MODE_SPEED'.
+enum
+{
+  custom_msgs__msg__MotorTelemetryCustomMsg__MODE_SPEED = 2
+};
+
+/// Constant 'MODE_POSITION'.
+enum
+{
+  custom_msgs__msg__MotorTelemetryCustomMsg__MODE_POSITION = 3
+};
+
+/// Constant 'MODE_FORCE'.
+enum
+{
+  custom_msgs__msg__MotorTelemetryCustomMsg__MODE_FORCE = 4
+};
+
 /// Struct defined in msg/MotorTelemetryCustomMsg in the package custom_msgs.
 /**
   * My custom motor telemetry message
  */
 typedef struct custom_msgs__msg__MotorTelemetryCustomMsg
 {
+  uint8_t control_mode;
   float measured_motor_speed_rpm;
   float measured_motor_position_grad;
   float measured_motor_current_amp;
