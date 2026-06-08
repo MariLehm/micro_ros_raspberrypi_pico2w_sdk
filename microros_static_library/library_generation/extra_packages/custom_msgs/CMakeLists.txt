@@ -7,6 +7,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MotorControlCustomMsg.msg"
   "msg/MotorTelemetryCustomMsg.msg"
+  "msg/EncoderTelemetryCustomMsg.msg"
 )
 
 ament_package()

@@ -1,0 +1,3 @@
+# My custom encoder telemetry message
+float32 measured_encoder_speed_rpm
+float32 measured_encoder_position_grad
