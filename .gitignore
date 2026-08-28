@@ -1,2 +1,4 @@
 /build
+/libmicroros/
+/microros_static_library/library_generation/extra_packages/local/
 pico-sdk

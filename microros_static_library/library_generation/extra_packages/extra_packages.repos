@@ -5,4 +5,4 @@ repositories:
     version: humble
   custom_msgs:
     type: file
-    path: ../extra_packages/custom_msgs
+    path: ../extra_packages/local/custom_msgs
