@@ -36,8 +36,9 @@ control_msgs/SingleDOFStateStamped.msg
 control_msgs/SingleJointPosition.action
 control_msgs/SteeringControllerStatus.msg
 custom_msgs/Action.msg
-custom_msgs/Env.msg
+custom_msgs/EnableMotion.srv
 custom_msgs/Info.msg
+custom_msgs/ResetEpisode.srv
 custom_msgs/State.msg
 data/Test.action
 data/Test.msg

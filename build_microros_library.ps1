@@ -5,6 +5,8 @@ Write-Host "Building micro-ROS static library for Pico 2W..." -ForegroundColor C
 
 docker run -it --rm `
     --entrypoint bash `
+    -e GIT_TERMINAL_PROMPT=0 `
+    -e GITHUB_TOKEN=$env:GITHUB_TOKEN `
     -v "${PWD}:/project" `
     microros/micro_ros_static_library_builder:humble `
     -c "chmod +x /project/microros_static_library/library_generation/library_generation.sh && dos2unix /project/microros_static_library/library_generation/library_generation.sh && /project/microros_static_library/library_generation/library_generation.sh"
