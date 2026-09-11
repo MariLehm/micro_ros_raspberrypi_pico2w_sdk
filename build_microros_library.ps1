@@ -3,13 +3,13 @@
 
 Write-Host "Building micro-ROS static library for Pico 2W..." -ForegroundColor Cyan
 
-docker run -it --rm `
+docker run -it `
     --entrypoint bash `
     -e GIT_TERMINAL_PROMPT=0 `
     -e GITHUB_TOKEN=$env:GITHUB_TOKEN `
     -v "${PWD}:/project" `
     microros/micro_ros_static_library_builder:humble `
-    -c "chmod +x /project/microros_static_library/library_generation/library_generation.sh && dos2unix /project/microros_static_library/library_generation/library_generation.sh && /project/microros_static_library/library_generation/library_generation.sh"
+    -c "chmod +x /project/microros_static_library/library_generation/library_generation.sh && dos2unix /project/microros_static_library/library_generation/library_generation.sh && /project/microros_static_library/library_generation/library_generation.sh; exec bash"
 
 if ($LASTEXITCODE -eq 0) {
     Write-Host "Library built successfully!" -ForegroundColor Green

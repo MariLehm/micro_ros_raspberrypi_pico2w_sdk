@@ -7,7 +7,7 @@ apt update
 
 apt install -y gcc-arm-none-eabi
 
-git clone --recurse-submodules -b 2.2.0 https://github.com/raspberrypi/pico-sdk /pico-sdk
+git clone --recurse-submodules -b 2.3.0 https://github.com/raspberrypi/pico-sdk /pico-sdk
 
 ######## Init ########
 
@@ -34,6 +34,27 @@ pushd firmware/mcu_ws > /dev/null
     popd > /dev/null
 
 popd > /dev/null
+
+TIME_C_PATH="/uros_ws/firmware/mcu_ws/uros/rcutils/src/time.c"
+if [ -f "$TIME_C_PATH" ]; then
+    echo "Applying clean patch to rcutils/src/time.c..."
+    python3 -c "
+path = '$TIME_C_PATH'
+with open(path, 'r') as f:
+    content = f.read()
+
+# Ersetze die Makros durch direkte String-Literale mit lld
+content = content.replace('\"%.19\" PRId64', '\"%.19lld\"')
+content = content.replace('\"%s%.10\" PRId64 \".%.9\" PRId64', '\"%s%.10lld.%.9lld\"')
+
+with open(path, 'w') as f:
+    f.write(content)
+print('Patch applied successfully via Python!')
+"
+else
+    echo "Warning: time.c not found at expected path: $TIME_C_PATH"
+fi
+
 
 ######## Clean and source ########
 find /project/src/ ! -name micro_ros_arduino.h ! -name *.c ! -name *.cpp ! -name *.c.in -delete
